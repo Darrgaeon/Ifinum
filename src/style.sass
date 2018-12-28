@@ -1,0 +1,154 @@
+@import "~bootstrap/dist/css/bootstrap.min.css"
+
+body
+  background: lightgrey
+  .invoices-to-show
+    display: flex
+    flex-direction: column
+    padding: 30px
+    .invoices-title
+      border-left: 3px solid dimgray
+      .title
+        padding-left: 15px
+        overflow: hidden
+      .title:after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        box-sizing: border-box
+        width: 100%
+        height: 1px
+        background: #FFF
+        border: solid #FFF 1px
+        margin: 0 -100% 0 15px
+    .invoices-actions
+      background: #FFFFFF
+      margin-top: 30px
+      padding: 20px
+      .title
+        font-size: 12px
+        font-weight: bold
+    .invoices-data
+      margin-top: 50px
+      background: #FFFFFF
+      padding: 20px
+      .table
+        font-size: 14px
+        thead
+          background: lightgrey
+          th
+            padding-right: 60px
+  .create-invoice-to-show
+    padding: 30px
+    .create-invoice
+      background: #FFFFFF
+      padding: 10px
+      margin-top: 30px
+      .invoice
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        background: white
+        margin: 20px
+        border: 1px solid dimgray
+        .invoice-input-parameter
+          width: 45%
+          margin: 30px 20px
+          input
+            width: 90%
+        .invoice-textarea-parameter
+          margin: 30px 20px
+          width: 100%
+          textarea
+            width: 96.3%
+      .button-save
+        margin: 30px 20px
+        text-align: right
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px)
+  body
+    .invoices-to-show
+      .invoices-actions
+        background: #FFFFFF
+        margin-top: 30px
+        padding-left: 20px
+      .invoices-data
+        .table
+          font-size: 12px
+          thead
+            th
+              padding-right: 40px
+
+    .create-invoice-to-show
+      .create-invoice
+        .invoice
+          .invoice-input-parameter
+            width: 40%
+            input
+              width: 80%
+          .invoice-textarea-parameter
+            width: 100%
+            textarea
+              width: 90%
+
+
+
+@media screen and (max-width: 772px)
+  body
+    .invoices-to-show
+      .invoices-data
+        .table
+          thead
+            th
+              padding-right: 25px
+
+
+    .create-invoice-to-show
+      .create-invoice
+        .invoice
+          .invoice-input-parameter
+            width: 100%
+            input
+              width: 90%
+          .invoice-textarea-parameter
+            width: 100%
+            textarea
+              width: 100%
+
+
+
+@media screen and (max-width: 530px)
+  body
+    .invoices-to-show
+      .invoices-actions
+        margin-top: 30px
+        padding-left: 20px
+      .invoices-data
+        padding: 5px
+        .table
+          font-size: 8px
+          thead
+            th
+              padding-right: 10px
+
+
+    .create-invoice-to-show
+      .create-invoice
+        .invoice
+          justify-content: center
+          .invoice-input-parameter
+            font-size: 10px
+            width: 80%
+            input
+              width: 70%
+          .invoice-textarea-parameter
+            width: 100%
+            font-size: 12px
+            textarea
+              width: 100%
